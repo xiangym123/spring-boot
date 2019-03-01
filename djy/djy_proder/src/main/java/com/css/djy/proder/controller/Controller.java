@@ -7,12 +7,12 @@ import com.css.djy.People;
 
 @RestController
 public class Controller {
-	@RequestMapping("/getPeople")
-	public String getPeople() {
-		People people = new People();
+	
+	@RequestMapping("/hello")
+	public People getHello() {
+		People p = new People("ÕÅÈý","ÄÐ","24");
 		
+		return p;
+		}
 		
-		return people.getName();
-		
-	}
 }
